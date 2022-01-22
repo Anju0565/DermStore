@@ -1,0 +1,331 @@
+*{
+    height: auto;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #top{
+    top: 0;
+    height: 35px;
+    width: 100%;
+    background-color: rgb(242,242,242);
+    position: sticky;
+    z-index: 1;
+  }
+  #header{
+    height: 150px;
+    width: 100%;
+    top: 5%;
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 1;
+  }
+  #logo{
+    height: auto;
+    display: flex;
+    margin-left: 2%;
+    margin-right: 5%;
+  }
+  #logo>div>img{
+    height: 80px;
+    width: 90px;
+  }
+  #search_bar{
+    height: 42px;
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    margin-right: 4%;
+    margin-top: 2%;
+    border: 1px solid rgb(105, 99, 99);
+  }
+  #search_bar>i{
+    margin-right: 4%;
+  }
+  #search_bar>input{
+    width: 420px;
+    border: none;
+  }
+  #account{
+    height: 25px;
+    display: flex;
+    align-items: center;
+    /* margin-left: 10%; */
+  }
+  #cart{
+    height: 25px;
+    display: flex;
+    align-items: center;
+    /* margin-left: 2%; */
+    margin-top: 2%;
+  }
+  #logo,#account,#cart,#nav_bar>div,#feature>div,#offer>h4,.mySlides,.dot,#img_box>div:hover{
+    cursor: pointer;
+  }
+  #nav_bar{
+    margin-top: 5%;
+    margin-left: 2%;
+    top: 10%;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    width: 75%;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    background-color: #ffffff;
+  }
+  #feature{
+    height: 60px;
+    width: 100%;
+    margin: 10% 0% 0% 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f2f2f2;
+  }
+  #feature > div{
+    display: flex;
+    width: 18%;
+    justify-content: center;
+    
+  }
+  #feature > div:nth-child(2){
+    width: 28%;
+  }
+  #feature > div:nth-child(2)>i{
+    margin-top: 4%;
+  }
+  #feature > div >i{
+    margin-top: 6%;
+    align-items: center;
+    margin-right: 6%;
+  }
+  #offer{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: #cccccc;
+  }
+  #offer>h4{
+    margin: auto;
+    line-height: 48px;
+    
+  } 
+  #search_cat{
+    height: auto;
+    width: 25%;
+    font-size: 18px;
+    margin-left: 2%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#search_cat>hr{
+    width: 90%;
+    margin-top: -4%;
+    margin-bottom: 7%;
+}
+/* #search_cat > h4,hr,input,label{
+  /* margin-left: 1%; */
+/* } */ */
+.checkbox{
+    height: 100px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+#prod_page{
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+}
+#product{
+    height: auto;
+    width: 68%;
+    margin-right: 2%;
+  }
+  .checkbox > input{
+      margin-bottom: 3%;
+  }
+  #prod_item{
+    display: grid;
+    grid-template-columns: repeat(3,35%);
+    margin-top: 3%;
+  }
+  #prod_item>div{
+    text-align: center;
+  }
+  #prod_item>div>button{
+    height: 12%;
+    width: 85%;
+    font-size: 15px;
+    color: white;
+    background-color: #222222;
+    border: none;
+  }
+  #prod_item>div>div{
+    display: flex;
+  }
+  #prod_item>div>div>button{
+    height: 30px;
+    width: 35px;
+    border: 1px solid rebeccapurple;
+    background-color: white;
+  }
+  #prod_item>div>div>img{
+    height: 250px;
+    width: 250px;
+    margin-bottom: 5%;
+  }
+  /* #prod_item>div>h4{
+   /* margin-top: -2%;; */
+  /* } */ */
+  #sortPrice{
+    height: 35px;
+    width: 200px;
+    font-size: 16px;
+
+  }
+  #prod_page {
+      margin-bottom: 5%;
+  }
+  #product > label{
+    font-size: 20px;
+    margin-right: 2%;
+    margin-left: 0;
+  }
+  button:hover{
+    cursor: pointer;
+  }
+    #top_footer{
+        width: 90%;
+        display: flex;
+        margin: auto;
+      }
+      #left_side{
+        margin-right: 8%;
+      }
+      #left_side>button{
+        height: 40px;
+        width: 35%;
+        background-color: #222222;
+        color: white;
+        border: none;
+      }
+      #left_side>button:hover{
+        background-color: #222222;
+        color: white;
+        border: none;
+        opacity: 0.6;
+        cursor: pointer;
+      }
+      #right_side>div> div:hover{
+        background-color: #eedfdf;
+        border: none;
+        opacity: 0.6;
+        cursor: pointer;
+      }
+      #right_side > div{
+        height: 50px;
+        width: 320px;
+        display: flex;
+        justify-content: space-between;
+      }
+      #right_side > div >div{
+        height: 48px;
+        width: 100%;
+        border-radius: 50%;
+        text-align: center;
+        margin: auto;
+        margin-right: 4%;
+        background-color: gainsboro;
+      }
+      #right_side > div >div>i{
+        margin-top: 30%;
+      }
+      #lower_footer{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2%;
+      }
+      #lower_footer >div> h4{
+        color: rgb(78, 77, 77);
+      }
+      #first{
+        width: 40%;
+      }
+      #last_footer{
+        height: 80px;
+        width: 95%;
+        margin: auto;
+      }
+      .dropdown {
+        height: auto;
+        width: 10%;
+        position: relative;
+        display: block;
+        margin-top: 2%;
+        margin-left: 10%;
+        margin-right: 2%;
+      }
+      
+      .drop{
+        height: auto;
+        width: 20%;
+        display: none;
+        position: fixed;
+        background-color: #f1f1f1;
+        z-index: 1;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        /* float: right; */
+      }
+      /* .drop>div,.drop>p{
+        float: right;
+      } */
+      .drop_btn>button,.drop_choice>button {
+        color: black;
+        width: 90%;
+        margin: auto;
+        margin-top: 2%;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        border: none;
+        font-size: 16px;
+      }
+      .drop_btn>button{
+        height: 40px;
+      }
+      .drop_choice>button{
+        height: 25px;
+      }
+      #log{
+        margin-top: 5%;
+        background-color: #222222;
+        color: white;
+      }
+      #register{
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+      }
+      .dropdown:hover .drop {
+        display: block;
+      }
+      #account:hover{
+        height: 40px;
+        background-color: #cccccc;
+      }
+      .drop_btn{
+        background-color: #f2f2f2;
+      }
+      .drop_choice,.drop_choice>button{
+        background-color: white;
+        font-size: 14px;
+      }
+      #account>i,#cart>i{
+        margin-right: 10px;
+      }
+      button:hover{
+        cursor: pointer;
+      }

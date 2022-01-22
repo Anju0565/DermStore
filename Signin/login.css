@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  top: 0;
+  height: auto;
+  width: auto;
+}
+body{
+  background-color: #f2f2f2;
+}
+#logo{
+  height: 90px;
+  width: 100%;
+  display: flex;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+}
+#logo>div>h1{
+  margin-top: 18%;
+  margin-left: 22%;
+  font-size: 20px;
+}
+#logo>div>img{
+  height: 65px;
+  width: 65px;
+  margin-left: 35%;
+  margin-top: 10%;
+}
+#login_form{
+  height: auto;
+  width: 100%;
+  margin: 10% 0% 0% 0%;
+  display: flex;
+  font-size: 18px;
+  justify-content: space-evenly;
+}
+
+#existing_customer{
+  width: 30%;
+  background-color: white;
+}
+#existing_customer > form > div>input{
+  height: 48px;
+  width: 90%;
+}
+
+#existing_customer > form > div{
+  margin: 4%;
+}
+#submit{
+  /* width: 100%; */
+  margin-left: 1%;
+  background-color: rgb(39, 38, 38);
+  color: whitesmoke;
+  border: none;
+  font-size: 18px;
+}
+#existing_customer > h2{
+  margin-left: 4%;
+  margin-top: 8%;
+}
+#new_customer{
+  height: 170px;
+  width: 30%;
+  /* margin: auto; */
+  background-color: white;
+}
+#new_customer > input{
+  height: 48px;
+  width: 90%;
+  padding: 4%;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 6%;
+  background-color: rgb(39, 38, 38);
+  color: whitesmoke;
+  border: none;
+}
+#new_customer > h2{
+  margin: 6%;
+}
+#social{
+  margin-left: 4%;
+}
+#social_login{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 16px;
+}
+#social_login > div{
+  height: 45px;
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid black;
+  margin-left: -50px;
+
+}
+#social_login > div:nth-child(1) > i{
+  color: blue;
+}
+#social_login > div:nth-child(2) > i{
+  color: orangered;
+}
+#logo:hover{
+  cursor: pointer;
+}

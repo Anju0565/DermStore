@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://kit.fontawesome.com/65d9e63589.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id= "main">
+        <div id="logo">
+            <div>
+                <img src="https://www.dermstore.com/apple-touch-icon.png?v=dermstoreus8.3715.3715">
+            </div>
+            <div>
+                <h1>DERMSTORE</h1>
+            </div>
+        </div>
+        <div id="details_about">
+            <div id="about_you">
+                <h2>About You</h2>
+                <br>
+                <div id="social">
+                    <h4>Sign Up With</h4>
+                    <br>
+                    <div id="social_login">
+                        <div id="fb">
+                            <i class="fab fa-facebook-square"></i>
+                            <p>Facebook</p>
+                        </div>
+                        <div id="google">
+                            <i class="fab fa-google"></i>
+                            <p>Google</p>
+                        </div>
+                    </div>    
+                </div>
+                <hr>
+                <h4>Or create an email account</h4>
+                <br>
+                <form id="form">
+                    <label>*Full Name</label><br>
+                    <input type="text" id="full_name" required> 
+                    <br>
+                    <label>*Email address</label><br>
+                    <input type="email" id="email" required> 
+                    <br>
+                        <label>*Confirm Email address</label><br>
+                        <input type="email" id="confirm_email" required> 
+                    <br>
+                    <p></p>
+                        <label>*Password</label><br>
+                        <input type="password" id="password" required>
+                        <p>Include a minimum of 6 characters, and contain at least 1 number</p> 
+                    <br>
+                        <label>*Confirm Password</label><br>
+                        <input type="password" id="confirm_password" required>
+                    <br>
+                        <label>Cell Phone Number  (Optional)</label><br>
+                        <input type="text" id="phone">
+                        <p>We will use this number to send occasional promotional messages.</p>
+                    <br>
+                    <br>
+                        <label>Referral Code  (Optional)</label><br>
+                        <input type="text" id="referral">
+                        <p>* Your referrals discount is automatically applied at cart</p>
+                    <br>
+                    <br>
+                    <h6>Loyalty Reward program</h6>
+                        <input type="checkbox" id="checkbox" required>
+                        <label>Include me in the Dermstore Rewards program Read our terms of use.</label>
+                        <input type="submit" value="CONTINUE" id="submit">
+                        <p>By proceeding, you are confirming that you agree to our Terms and Conditions and Privacy Policy</p>
+                </form>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
+<script src="signup.js"></script>

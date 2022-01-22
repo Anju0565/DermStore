@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="main">
+  <div id="fillup_form">
+    <form id="form">
+      <label>Category</label><br>
+      <select id="filter" required>
+        <option value="skin">Skin</option>
+        <option value="hair">Hair</option>
+        <option value="makeup">Makeup</option>
+        <option value="beauty">BeautyFIX</option>
+        <option value="bath">Body & Bath</option>
+      </select>
+      <br>
+      <label>Brand</label><br>
+      <select id="brand" required>
+        <option value="obagi">OBAGI</option>
+        <option value="oribe">ORIBE</option>
+        <option value="sk_med">SkinMedica</option>
+        <option value="isclinical">iS Clinical</option>
+        <option value="eltamd">EltaMd</option>
+        <option value="sk_ceu">SKIN CEUTICALS</option>
+      </select>
+      <br>
+      <input type="text" placeholder="Tag" id="tag" required><br>
+      <input id="name" type="text" placeholder="Name of item" required><br>
+      <input id="image" type="text" placeholder="image url" required><br>
+      <textarea id="description" placeholder="Description" rows="4" cols="25" required></textarea><br>
+      <input id="rating" type="text" placeholder="rating" required><br>
+      <input type="text" id="price" placeholder="Price" required><br>
+      <input type="submit" value="Add" id="submit">
+    </form>
+  </div>
+  <div id="display_item">
+  </div>
+</div>
+</body>
+</html>
+
+<script>
+  document.querySelector("#form").addEventListener("submit", addItem);
+  var prod = JSON.parse(localStorage.getItem("shoppingItems")) || [];
+  function addItem(event) {
+    event.preventDefault();
+
+    var category = document.querySelector("#filter").value;
+    var brand = document.querySelector("#brand").value;
+    var tag= document.querySelector("#tag").value;
+    var name = document.querySelector("#name").value;
+    var img = document.querySelector("#image").value;
+    var description = document.querySelector("#description").value;
+    var rating = document.querySelector("#rating").value;
+    var price = document.querySelector("#price").value;
+        
+
+    var prodObj = {
+      category: category,
+      brand: brand,
+      tag: tag,
+      name: name,
+      img: img,
+      rating: rating,
+      description: description,
+      price: price,
+    };
+    prod.push(prodObj);
+    localStorage.setItem("shoppingItems", JSON.stringify(prod));
+  }
+</script>

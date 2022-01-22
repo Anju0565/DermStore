@@ -1,0 +1,60 @@
+*{
+    height: auto;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #header{
+    height: 100px;
+    width: 100%;
+    top: 0%;
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+  }
+  #logo{
+    height: auto;
+    display: flex;
+    margin-left: 2%;
+    margin-right: 5%;
+  }
+  #logo>div>img{
+    height: 80px;
+    width: 90px;
+  }
+  #logo>div:nth-child(2)>h1{
+    margin-top: 10%;
+  }
+  #container{
+      width: 95%;
+      margin-top: 120px;
+      margin-left: 35px;
+  }
+  #form{
+      font-size: 18px;
+      font-weight: bolder;
+  }
+#form>div,label,input,h1{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+#pay_method > input{
+    width: auto;
+    margin-top: -12px;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+input{
+    height: 30px;
+    width: 25%;
+    padding: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+#submit{
+    height: 50px;
+    width: 30%;
+    background-color: black;
+    color: white;
+}
